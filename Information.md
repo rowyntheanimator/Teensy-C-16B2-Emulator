@@ -25,12 +25,12 @@
 - Hex 0x17 Decimal 23 SNA: Set the A Register to the N Register.
 - Hex 0x18 Decimal 24 DES: Set the Z Register to 0.
 - Hex 0x19 Decimal 25 AND operand1 operand2: Sets the register of choice determined by operand1 to itself logical and operand2.
-- Hex 0x20 Decimal 26 OR operand1 operand2: Sets the register of choice determined by operand1 to itself logical or operand2.
-- Hex 0x21 Decimal 27 NOT operand: Sets the register of choice determined by operand1 to logical not itself.
-- Hex 0x22 Decimal 28 XOR operand1 operand2: Sets the register of choice determined by operand1 to itself logical xor operand2.
-- Hex 0x23 Decimal 29 SHR operand: Shifts right the register of choice determined by operand1 by one bit.
-- Hex 0x24 Decimal 30 SHL operand: Shifts left the register of choice determined by operand1 by one bit.
-- Hex 0x25 Decimal 31 NOP: Does nothing.
+- Hex 0x1A Decimal 26 OR operand1 operand2: Sets the register of choice determined by operand1 to itself logical or operand2.
+- Hex 0x1B Decimal 27 NOT operand: Sets the register of choice determined by operand1 to logical not itself.
+- Hex 0x1C Decimal 28 XOR operand1 operand2: Sets the register of choice determined by operand1 to itself logical xor operand2.
+- Hex 0x1D Decimal 29 SHR operand: Shifts right the register of choice determined by operand1 by one bit.
+- Hex 0x1E Decimal 30 SHL operand: Shifts left the register of choice determined by operand1 by one bit.
+- Hex 0x1F Decimal 31 NOP: Does nothing.
 
 ## The Syntax of Instructions.
 
