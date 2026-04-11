@@ -44,7 +44,7 @@ $xxxxx is for immediate 16 bit memory requests.
 
 A, B, and C are for accessing registers.
 
-**Note**: The MEM instruction should only be written as `MEM <operand1> #xxxxx` for a fixed memory address.
+**Note**: The MEM instruction should only be written as `MEM <value> <addr>`.
 
 ## Registers, and Memory Arrays.
 
