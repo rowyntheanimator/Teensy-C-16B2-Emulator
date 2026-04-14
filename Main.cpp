@@ -137,12 +137,15 @@ void mem(uint8_t valA, uint16_t valB) {
     switch (M) {
       case 0:
         MEM[valB] = valA;
+        break;
       case 1:
         PERM_MEM[valB] = valA;
         savePERMEM(valB, valA);
+        break;
       case 2:
         PROG_MEM[valB] = valA;
         savePROGMEM(valB, valA);
+        break;
     }
 }
 int stack_pop() {
