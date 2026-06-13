@@ -530,10 +530,9 @@ void load_PROG_PERM() {
         if (f1) f1.close();
         if (f2) f2.close();
         Serial.println("LOADING FAILED. PLEASE CHECK MICRO SD CARD");
-        while (1) {}  // halt
+        while (1) {}
     }
 
-    // --- Load PROG_MEM ---
     size_t totalRead = 0;
     while (totalRead < sizeof(PROG_MEM)) {
         size_t r = f1.read(PROG_MEM + totalRead, sizeof(PROG_MEM) - totalRead);
@@ -544,7 +543,6 @@ void load_PROG_PERM() {
         totalRead += r;
     }
 
-    // --- Load PERM_MEM ---
     totalRead = 0;
     while (totalRead < sizeof(PERM_MEM)) {
         size_t r = f2.read(PERM_MEM + totalRead, sizeof(PERM_MEM) - totalRead);
